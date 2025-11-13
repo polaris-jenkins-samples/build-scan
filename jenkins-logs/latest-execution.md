@@ -1,11 +1,11 @@
 # Jenkins Execution Log
 
 ## Build Information
-- **Job Name:** `MBP_Github_Polaris_Rapid_Scan/main`
+- **Job Name:** `MBP_Github_Polaris_Arbitrary_Sast_Scan/main`
 - **Build Number:** #1
 - **Build Status:** ⚪ **ABORTED**
-- **Duration:** 29 sec and counting
-- **Timestamp:** 2025-11-13 11:46:30 UTC
+- **Duration:** 47 sec and counting
+- **Timestamp:** 2025-11-13 12:47:21 UTC
 
 ---
 
@@ -14,7 +14,7 @@
 ```
 Branch indexing
 Connecting to https://api.github.com using madhusud@blackduck.com/****** (Github_Username_PAT)
-Obtained nodejs-npm/Jenkinsfile from ef3110c312e5848a73d7cc3ec0b813e25da1f036
+Obtained nodejs-npm/Jenkinsfile from a8f1b9e82b7b3dd38c86bc5ad83f08da0d3c7041
 Loading library blackduck-logs-publisher@main
 Attempting to resolve main from remote references...
  > git --version # timeout=10
@@ -27,7 +27,7 @@ using credential Github_Username_PAT
 Cloning the remote Git repository
 Cloning with configured refspecs honoured and without tags
 Cloning repository https://github.com/integrations-garage/blackduck-logs-publisher
- > git init /Users/madhusud/.jenkins/workspace/P_Github_Polaris_Rapid_Scan_main@libs/a0dda568bac7bbb4a171f59ba3f2660c21c69edc6356524e9ae8bb4500c12bbb # timeout=10
+ > git init /Users/madhusud/.jenkins/workspace/Polaris_Arbitrary_Sast_Scan_main@libs/a0dda568bac7bbb4a171f59ba3f2660c21c69edc6356524e9ae8bb4500c12bbb # timeout=10
 Fetching upstream changes from https://github.com/integrations-garage/blackduck-logs-publisher
  > git --version # timeout=10
  > git --version # 'git version 2.39.5 (Apple Git-154)'
@@ -43,7 +43,7 @@ Commit message: "Phase 3 - 2"
 First time build. Skipping changelog.
 [Pipeline] Start of Pipeline
 [Pipeline] node
-Running on mac-sh in /Users/madhusud/Jenkins_Testing/Nodes/workspace/P_Github_Polaris_Rapid_Scan_main
+Running on mac-sh in /Users/madhusud/Jenkins_Testing/Nodes/workspace/Polaris_Arbitrary_Sast_Scan_main
 [Pipeline] {
 [Pipeline] stage
 [Pipeline] { (Declarative: Checkout SCM)
@@ -53,20 +53,20 @@ using credential Github_Username_PAT
 Cloning the remote Git repository
 Cloning with configured refspecs honoured and without tags
 Cloning repository https://github.com/polaris-jenkins-samples/build-scan.git
- > git init /Users/madhusud/Jenkins_Testing/Nodes/workspace/P_Github_Polaris_Rapid_Scan_main # timeout=10
+ > git init /Users/madhusud/Jenkins_Testing/Nodes/workspace/Polaris_Arbitrary_Sast_Scan_main # timeout=10
 Fetching upstream changes from https://github.com/polaris-jenkins-samples/build-scan.git
  > git --version # timeout=10
  > git --version # 'git version 2.39.5 (Apple Git-154)'
 using GIT_ASKPASS to set credentials Github_Username_PAT
  > git fetch --no-tags --force --progress -- https://github.com/polaris-jenkins-samples/build-scan.git +refs/heads/main:refs/remotes/origin/main # timeout=10
 Avoid second fetch
-Checking out Revision ef3110c312e5848a73d7cc3ec0b813e25da1f036 (main)
-Commit message: "Jenkins log upload - Build #3"
+Checking out Revision a8f1b9e82b7b3dd38c86bc5ad83f08da0d3c7041 (main)
+Commit message: "Jenkins log upload - Build #1"
 First time build. Skipping changelog.
  > git config remote.origin.url https://github.com/polaris-jenkins-samples/build-scan.git # timeout=10
  > git config --add remote.origin.fetch +refs/heads/main:refs/remotes/origin/main # timeout=10
  > git config core.sparsecheckout # timeout=10
- > git checkout -f ef3110c312e5848a73d7cc3ec0b813e25da1f036 # timeout=10
+ > git checkout -f a8f1b9e82b7b3dd38c86bc5ad83f08da0d3c7041 # timeout=10
 [Pipeline] }
 [Pipeline] // stage
 [Pipeline] withEnv
@@ -76,9 +76,9 @@ First time build. Skipping changelog.
 [Pipeline] script
 [Pipeline] {
 [Pipeline] echo
-JOB_NAME: MBP_Github_Polaris_Rapid_Scan/main
+JOB_NAME: MBP_Github_Polaris_Arbitrary_Sast_Scan/main
 [Pipeline] dir
-Running in /Users/madhusud/Jenkins_Testing/Nodes/workspace/P_Github_Polaris_Rapid_Scan_main/nodejs-npm
+Running in /Users/madhusud/Jenkins_Testing/Nodes/workspace/Polaris_Arbitrary_Sast_Scan_main/nodejs-npm
 [Pipeline] {
 [Pipeline] sh
 + node --version
@@ -107,8 +107,8 @@ npm warn deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 hav
 npm warn deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
 npm warn deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
 npm warn deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
-npm warn deprecated boom@2.10.1: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
 npm warn deprecated chokidar@2.1.6: Chokidar 2 does not receive security updates since 2019. Upgrade to chokidar 3 with 15x fewer dependencies
+npm warn deprecated boom@2.10.1: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
 npm warn deprecated sntp@0.2.4: This module moved to @hapi/sntp. Please make sure to switch over as this distribution is no longer supported and may contain bugs and critical security issues.
 npm warn deprecated minimatch@0.3.0: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
 npm warn deprecated chokidar@2.1.8: Chokidar 2 does not receive security updates since 2019. Upgrade to chokidar 3 with 15x fewer dependencies
@@ -137,13 +137,20 @@ npm warn deprecated bson@1.0.9: Fixed a critical issue with BSON serialization d
 npm warn deprecated nodeunit@0.9.5: you are strongly encouraged to use other testing options
 Aborted by admin
 Sending interrupt signal to process
+Aborted by admin
+Sending interrupt signal to process
+Aborted by admin
+Sending interrupt signal to process
+Click here to forcibly terminate running steps
+Aborted by admin
+Sending interrupt signal to process
 
-added 962 packages, and audited 1412 packages in 17s
+added 964 packages, and audited 1480 packages in 22s
 
 32 packages are looking for funding
   run `npm fund` for details
 
-136 vulnerabilities (9 low, 35 moderate, 57 high, 35 critical)
+137 vulnerabilities (9 low, 35 moderate, 57 high, 36 critical)
 
 To address issues that do not require attention, run:
   npm audit fix
@@ -155,7 +162,6 @@ Some issues need review, and may require choosing
 a different dependency.
 
 Run `npm audit` for details.
-Aborted by admin
 [Pipeline] }
 [Pipeline] // dir
 [Pipeline] }
@@ -164,8 +170,107 @@ Aborted by admin
 [Pipeline] // stage
 [Pipeline] stage
 [Pipeline] { (polaris-build-scan)
-Stage "polaris-build-scan" skipped due to earlier failure(s)
-[Pipeline] getContext
+[Pipeline] script
+[Pipeline] {
+[Pipeline] dir
+Running in /Users/madhusud/Jenkins_Testing/Nodes/workspace/Polaris_Arbitrary_Sast_Scan_main/nodejs-npm
+[Pipeline] {
+[Pipeline] security_scan
+**************************** START EXECUTION OF BLACK DUCK SECURITY SCAN ****************************
+[Security Scan] INFO: Jenkins Job name: MBP_Github_Polaris_Arbitrary_Sast_Scan
+-------------------------------- Connection to node --------------------------------
+[Security Scan] INFO: Jenkins job is running on agent node remotely
+-------------------------- Parameter Validation Initiated --------------------------
+[Security Scan] INFO:  --- product = [POLARIS]
+[Security Scan] INFO: Parameters for polaris:
+[Security Scan] INFO:  --- polaris_waitForScan = true
+[Security Scan] INFO:  --- polaris_server_url = https://poc.polaris.blackduck.com
+[Security Scan] INFO:  --- polaris_assessment_types = SAST,SCA
+[Security Scan] INFO:  --- polaris_access_token = ******************************************************************************
+------------------------------------------------------------------------------------
+[Security Scan] INFO: Parameters for additional configuration:
+[Security Scan] INFO:  --- network_airgap = false
+[Security Scan] INFO: Polaris parameters are validated successfully
+[Security Scan] INFO: Bridge download parameters are validated successfully
+[Security Scan] INFO: Bridge download is not required. Found installed in: /Users/madhusud/bridge-cli-bundle/bridge-cli-bundle-macos_arm
+------------------------------------------------------------------------------------
+[Security Scan] INFO: Bridge CLI version is - 3.9.2
+[Security Scan] INFO: Jenkins Job name: MBP_Github_Polaris_Arbitrary_Sast_Scan
+[Security Scan] INFO: Polaris Application Name: arbitrary-params-sast
+[Security Scan] INFO: Polaris Project Name: arbitrary-params-sast
+[Security Scan] INFO: Polaris Branch Name: main
+[Security Scan] INFO: Jenkins Job name: MBP_Github_Polaris_Arbitrary_Sast_Scan
+[Security Scan] INFO: Executable command line arguments: /Users/madhusud/bridge-cli-bundle/bridge-cli-bundle-macos_arm/bridge-cli --stage polaris --input /Users/madhusud/Jenkins_Testing/Nodes/workspace/Polaris_Arbitrary_Sast_Scan_main/polaris_input3222675509189318017.json --out .bridge/output/scan_info_out.json
+
+******************************* START EXECUTION OF BRIDGE CLI *******************************
+2025-11-13 12:47:13.6937 IST [Bridge CLI] INFO: Using cache directory: /Users/madhusud/bridge-cli-bundle/bridge-cli-bundle-macos_arm
+2025-11-13 12:47:13.7040 IST [Bridge CLI] INFO: Found version "3.0.371" in registry for workflow "polaris", trying to load it from local cache
+Click here to forcibly terminate running steps
+2025-11-13 12:47:15.1499 IST [Bridge CLI] INFO: Input Resources:
+2025-11-13 12:47:15.1499 IST [Bridge CLI] INFO: resource = value [source]
+2025-11-13 12:47:15.1499 IST [Bridge CLI] INFO: ------------------------------------------------------------
+2025-11-13 12:47:15.1499 IST [Bridge CLI] INFO: network.airgap = false [polaris_input3222675509189318017.json]
+2025-11-13 12:47:15.1500 IST [Bridge CLI] INFO: polaris.accesstoken = ***************************************** [polaris_input3222675509189318017.json]
+2025-11-13 12:47:15.1500 IST [Bridge CLI] INFO: polaris.application.name = arbitrary-params-sast [polaris_input3222675509189318017.json]
+2025-11-13 12:47:15.1500 IST [Bridge CLI] INFO: polaris.assessment.types = [SAST SCA] [polaris_input3222675509189318017.json]
+2025-11-13 12:47:15.1500 IST [Bridge CLI] INFO: polaris.branch.name = main [polaris_input3222675509189318017.json]
+2025-11-13 12:47:15.1500 IST [Bridge CLI] INFO: polaris.project.name = arbitrary-params-sast [polaris_input3222675509189318017.json]
+2025-11-13 12:47:15.1500 IST [Bridge CLI] INFO: polaris.serverUrl = https://poc.polaris.blackduck.com [polaris_input3222675509189318017.json]
+2025-11-13 12:47:15.1500 IST [Bridge CLI] INFO: polaris.waitForScan = true [polaris_input3222675509189318017.json]
+2025-11-13 12:47:15.1500 IST [Bridge CLI] INFO: ------------------------------------------------------------
+2025-11-13 12:47:15.1501 IST [Bridge CLI] INFO: Starting adapters for stage polaris
+2025-11-13 12:47:15.1520 IST [Bridge CLI] INFO: Starting Adapter: Polaris Status Provider
+2025-11-13 12:47:15.1520 IST [Bridge CLI] INFO: Starting Adapter: Polaris Controller
+2025-11-13 12:47:15.1522 IST [Bridge CLI] INFO: Starting Adapter: Polaris Initializer
+2025-11-13 12:47:15.1525 IST [Bridge CLI] INFO: Starting Adapter: Polaris SCM Discovery
+2025-11-13 12:47:15.2673 IST [Polaris SCM Discovery] INFO: Adapter finished
+2025-11-13 12:47:15.2717 IST [Bridge CLI] INFO: Starting Adapter: Set Polaris Assessment Mode to CI
+2025-11-13 12:47:15.2719 IST [Set Polaris Assessment Mode to CI] INFO: Provided value for resource 'polaris.assessment.mode'
+2025-11-13 12:47:15.2720 IST [Set Polaris Assessment Mode to CI] INFO: Adapter finished
+2025-11-13 12:47:15.2767 IST [Bridge CLI] INFO: Starting Adapter: Create Polaris Project & Branch By Default
+2025-11-13 12:47:15.2769 IST [Create Polaris Project & Branch By Default] INFO: Provided value for resource 'polaris.onboarding'
+2025-11-13 12:47:15.2769 IST [Create Polaris Project & Branch By Default] INFO: Adapter finished
+2025-11-13 12:47:18.4282 IST [Polaris Initializer] INFO: Successfully created test for "SCA(scaPackage)" assessment. The short test ID is "HGMYZWD"
+2025-11-13 12:47:18.4474 IST [Polaris Initializer] INFO: Successfully created test for "SAST(sastFull)" assessment. The short test ID is "7MQ14VJ"
+2025-11-13 12:47:18.4758 IST [Polaris Initializer] INFO: Provided value for resource 'polaris.test.SCA.tests.scaPackage.id'
+2025-11-13 12:47:18.4762 IST [Polaris Initializer] INFO: Provided value for resource 'polaris.test.SAST.tests.sastFull.id'
+2025-11-13 12:47:18.4764 IST [Polaris Initializer] INFO: Provided value for resource 'polaris.test.SCA.tests.scaPackage.shortId'
+2025-11-13 12:47:18.4766 IST [Polaris Initializer] INFO: Provided value for resource 'polaris.test.SAST.tests.sastFull.shortId'
+2025-11-13 12:47:18.4767 IST [Polaris Initializer] INFO: Provided value for resource 'polaris.test.SAST.tests.sastFull.streamId'
+2025-11-13 12:47:18.4769 IST [Polaris Initializer] INFO: Provided value for resource 'polaris.project.id'
+2025-11-13 12:47:18.4770 IST [Polaris Initializer] INFO: Provided value for resource 'polaris.branch.id'
+2025-11-13 12:47:18.4771 IST [Polaris Initializer] INFO: Provided value for resource 'polaris.portfolioid'
+2025-11-13 12:47:18.4772 IST [Polaris Initializer] INFO: Provided value for resource 'polaris.tenant.id'
+2025-11-13 12:47:18.4773 IST [Polaris Initializer] INFO: Provided value for resource 'polaris.application.id'
+2025-11-13 12:47:18.4777 IST [Polaris Initializer] INFO: Adapter finished
+2025-11-13 12:47:18.4878 IST [Bridge CLI] INFO: Starting Adapter: Check pull request
+2025-11-13 12:47:18.5206 IST [Check pull request] INFO: Provided value for resource 'environment.scan.pull'
+2025-11-13 12:47:18.5209 IST [Check pull request] INFO: Adapter finished
+2025-11-13 12:47:18.5684 IST [Polaris Controller] INFO: Running for "sast" assessment with scan type "sastFull"
+2025-11-13 12:47:18.5689 IST [Polaris Controller] INFO: fetching recommended "coverity" tool info...
+Aborted by admin
+[Security Scan] ERROR: An exception occurred while invoking bridge-cli from the plugin: null
+******************************* END EXECUTION OF BRIDGE CLI *******************************
+2025-11-13 12:47:19.3426 IST [Polaris Controller] INFO: checking "coverity" tool installation inside bridge home directory: /Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0
+2025-11-13 12:47:19.3427 IST [Polaris Controller] INFO: Checking tool version for "cov_thin_client" in "/Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0"
+2025-11-13 12:47:19.3461 IST [Polaris Controller] INFO: Running command:/Users/madhusud/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/coverity --version
+2025-11-13 12:47:19.4213 IST [Polaris Controller] INFO: Got tool version for "cov_thin_client": 2025.9.0
+2025-11-13 12:47:19.7241 IST [Polaris Controller] INFO: "coverity" tool is already installed...
+2025-11-13 12:47:19.7242 IST [Polaris Controller] INFO: fetching recommended "Sigma" tool info...
+2025-11-13 12:47:20.0117 IST [Polaris Controller] INFO: checking "Sigma" tool installation inside bridge home directory: /Users/madhusud/.blackduck/bridge/tools/sigma/2025.10.0
+2025-11-13 12:47:20.0118 IST [Polaris Controller] INFO: Checking tool version for "sigma" in "/Users/madhusud/.blackduck/bridge/tools/sigma/2025.10.0"
+2025-11-13 12:47:20.0119 IST [Polaris Controller] INFO: Running command:/Users/madhusud/.blackduck/bridge/tools/sigma/2025.10.0/sigma --version
+2025-11-13 12:47:20.1469 IST [Polaris Controller] INFO: Got tool version for "sigma": 2025.10.0
+2025-11-13 12:47:20.2023 IST [Polaris Controller] ERROR: Adapter failed: signal: terminated
+[Security Scan] ERROR: An exception occurred while deleting file: null
+[Security Scan] ERROR: An exception occurred while deleting file: null
+[Security Scan] INFO: An exception occurred while processing JSON file for Issue count: null
+[Security Scan] INFO: Security Scan execution is successful
+**************************** END EXECUTION OF BLACK DUCK SECURITY SCAN ****************************
+[Pipeline] }
+[Pipeline] // dir
+[Pipeline] }
+[Pipeline] // script
 [Pipeline] }
 [Pipeline] // stage
 [Pipeline] stage
@@ -175,7 +280,7 @@ Black Duck Logs Publisher - Starting log upload process
 [Pipeline] echo
 Configuration: [githubOrg:polaris-jenkins-samples, repoName:build-scan, credentialsId:github-pat-logs-publisher, maxRetries:3, retentionCount:5, jobNamePrefixes:[MBP_Github_, MBP_, Github_, Pipeline_, Job_, Build_]]
 [Pipeline] echo
-Job Name: MBP_Github_Polaris_Rapid_Scan/main
+Job Name: MBP_Github_Polaris_Arbitrary_Sast_Scan/main
 [Pipeline] echo
 Build Number: 1
 [Pipeline] echo
