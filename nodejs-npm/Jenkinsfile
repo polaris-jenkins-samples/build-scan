@@ -18,7 +18,7 @@ pipeline {
             }
         }
 
-        stage("blackduck-security-scan") {
+        stage("polaris-build-scan") {
             steps {
                 script {
                     dir('nodejs-npm') {
